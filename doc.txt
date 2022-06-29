@@ -59,3 +59,5 @@ tack available for collaboration & deploying easily
 running git init from the main/root folder
 
 git add . allows us to add ll the files and folders to git staging area
+
+git reset will undo git add done 

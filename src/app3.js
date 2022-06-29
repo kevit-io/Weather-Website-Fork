@@ -41,17 +41,17 @@ app.get('/help',(req,res)=>{
 app.get('/weather',(req,res)=>{//setting up route for weather page
     if(!req.query.address){//if address is not provided then it will print error message
         return res.send({
-            error: 'You must provide a query string for address'
+            error: 'You must provide an address'
         })
     }
 else{
     geocode(req.query.address,(error,{latitude,longitude,location}={})=>{
         if(error){
-            return res.send(error)
+            return res.send({error:error})
           }
           forecast(latitude,longitude, (error, fdata) => {
             if(error){
-              return res.send(error)
+              return res.send({error:error})
             }
             res.send({
                 forecast : fdata,
