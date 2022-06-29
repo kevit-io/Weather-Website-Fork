@@ -1,0 +1,61 @@
+nodemon basically starts the server once and re runs each timme the js file has made changes.
+But when there are changes made in hbs files it does not update and will not give expected results.
+so to include all the changes made in the file we can use following command
+ to include changes made in all the file
+
+ nodemon src/app.js -e hbs,js where -e for extensions of all the files
+
+
+ hbs is a express. js wrapper for the handlebars. js javascript template engine. Handlebars. js is a template engine to make writing html code easier
+ textContent is used to print content on client browser
+
+
+ paritals= to make code reusable such as header and footer
+ 
+ View engines allow us to render web pages using template 
+ files. These templates are filled with actual data and 
+ served to the client. There are multiple view engines,
+ like Mustache, Handlebars, EJS, etc but 
+the most popular of which is Embedded Javascript (EJS)
+
+template engine= A template engine enables you to use static 
+template files in your application. At runtime, the template engine
+replaces variables in a template file with actual values, and transforms 
+the template into an HTML file sent to the client. This approach makes 
+it easier to design an HTML page.
+Some popular template engines that work with Express are Pug, 
+Mustache, and EJS. The Express application generator uses Jade 
+as its default, but it also supports several others
+
+express.static=The express.static() function is a built-in middleware 
+function in Express. It serves static files and is based on serve-static.
+
+app.use()=Mounts the specified middleware function or functions at the 
+specified path: the middleware function is executed when the base of the
+requested path matches path.
+
+middleware=Middleware functions are functions that have access to the 
+request object (req), the response object (res), and the next middleware 
+function in the application’s request-response cycle. The next middleware 
+function is commonly denoted by a variable named next
+
+when we want to tell express that we want to use a particular 
+template engine we need to set the property of view engine to hbs
+
+
+The JavaScript navigator object is used for browser detection
+
+
+Heroku is a container-based cloud Platform as a Service (PaaS). 
+Developers use Heroku to deploy, manage, and scale modern apps.
+
+Heroku comes with it's own server so you can purchase hosting 
+plan & deploy you web apps easily. In case of Github you need 
+to purchase a separate server to host your web apps. Github is 
+well known for contribution & collaboration & Heroku is for backend s
+tack available for collaboration & deploying easily
+
+4 types of categorization of files in git- untracked,unstage,staged and commit
+running git init from the main/root folder
+
+git add . allows us to add ll the files and folders to git staging area

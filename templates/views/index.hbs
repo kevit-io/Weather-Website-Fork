@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/image/weather.jpeg">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+   
+</head>
+<body>
+    <div class="main-content">
+        {{!-- partials --}}
+    {{>header}}
+{{!-- handlebars --}}
+    {{!-- <h1>{{title}}</h1>--}}{{!-- {{}}- used to access the properties defined
+    in an object in the app2.js file --}}
+    {{!-- <p>Created by {{name}}</p> --}}
+    <form>
+        <input placeholder="Location">
+        <button>Search</button>
+    </form>
+    <p id="p1"></p>
+    <p id="p2"></p>
+     </div>
+{{>footer}}
+<script src="/js/temp2.js"></script>
+{{!-- <script src="/js/temp.js"></script> --}}
+
+</body>
+
+</html>
