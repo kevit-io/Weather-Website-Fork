@@ -12,7 +12,7 @@ weatherForm.addEventListener('submit', async function(event){
     p2.textContent =''
     try{
         //checks whether the client is online or offline.
-        const response = await axios.get(`http://localhost:2000/weather?address=${location}`)
+        const response = await axios.get(`/weather?address=${location}`)
         const data = response.data
         if(data.error){
             p1.textContent =data.error
