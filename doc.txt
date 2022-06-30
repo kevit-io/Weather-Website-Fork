@@ -61,3 +61,7 @@ running git init from the main/root folder
 git add . allows us to add ll the files and folders to git staging area
 
 git reset will undo git add done 
+
+
+git push origin main- used to push all the code to Github
+git push heroku main - used to push all the code to heroku production server
