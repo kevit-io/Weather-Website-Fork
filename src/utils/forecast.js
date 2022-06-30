@@ -8,7 +8,7 @@ try{
         clback('Unable to find location',undefined)
     }
     else{
-        clback(undefined,`It is currently ${response.data.current.temperature} out but it feels like ${response.data.current.feelslike} out`)
+        clback(undefined,`It is currently ${response.data.current.temperature} out but it feels like ${response.data.current.feelslike} out.The humidity is ${response.data.current.humidity}`)
     }
   
 
